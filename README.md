@@ -22,7 +22,8 @@ Adventures of the Cutest Friends</h4>
 </h3>
 </div>
 
-## Use Case
+## Download
+https://play.google.com/store/apps/details?id=com.tellstorygames.sevimliler&pcampaignid=web_share
 
 
  This program was created in response to a request from a translator friend who manually translated and separated subtitles into .srt files by copying and pasting lines for each voice actor's performance.
