@@ -5,23 +5,25 @@
   Cute Friends
   <br>
 </h1>
-
-<h4 align="center">
+<div >
+<img alt="How To Use" src="/DemoPlay.gif" align="right" width="30%">
+<h3 align="center">
+  <br><br>
 ☁️Cloud 
 <br>
+  <br>
 🎈Balloon
+<br>
 <br>
 🐤Chick-chick
 <br>
+<br>
 Adventures of the Cutest Friends</h4>
+</h3>
+</div>
 
-<p align="center">
-  <img alt="How To Use" src="/DemoPlay.gif" width="40%">
-</p>
+## Use Case
 
-<h1 align="center">
-  Use Case
-</h1>
 
  This program was created in response to a request from a translator friend who manually translated and separated subtitles into .srt files by copying and pasting lines for each voice actor's performance.
   <br>
