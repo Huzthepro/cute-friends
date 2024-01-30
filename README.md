@@ -7,11 +7,11 @@
 </h1>
 
 <h4 align="center">
-🐤Chick-chick
+☁️Cloud 
 <br>
 🎈Balloon
 <br>
-☁️Cloud 
+🐤Chick-chick
 <br>
 Adventures of the Cutest Friends</h4>
 
