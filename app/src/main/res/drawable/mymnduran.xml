@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/maymun" android:duration="600"/>
+    <item
+        android:drawable="@drawable/maymun2" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun3" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun4" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun5" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun6" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun7" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun8" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun9" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun10" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun11" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun12" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun13" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun14" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun15" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun16" android:duration="200"/>
+    <item
+        android:drawable="@drawable/maymun17" android:duration="200"/>
+
+</animation-list>

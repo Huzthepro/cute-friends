@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sevimli Arkadaşlar</string>
+    <string name="score">8</string>
+    <string name="oyun_bitti">OYUN BİTTİ!</string>
+    <string name="skorunuz">0</string>
+    <string name="en_y_ksek">En Yüksek Puan: 0</string>
+    <string name="lvl1">1. LEVEL</string>
+    <string name="lvlGosterge">LVL 1</string>
+</resources>

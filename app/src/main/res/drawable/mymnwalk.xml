@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:drawable="@drawable/maymunw1" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw2" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw3" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw4" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw5" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw6" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw7" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw8" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw9" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw10" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw11" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw12" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw13" android:duration="150"/>
+    <item
+        android:drawable="@drawable/maymunw14" android:duration="150"/>
+
+</animation-list>

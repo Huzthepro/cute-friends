@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:drawable="@drawable/bulut" android:duration="1300"/>
+    <item
+        android:drawable="@drawable/bulut2" android:duration="270"/>
+
+</animation-list>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:drawable="@drawable/bulut" android:duration="200"/>
+    <item
+        android:drawable="@drawable/bulutsag1" android:duration="200"/>
+    <item
+        android:drawable="@drawable/bulutsag2" android:duration="200"/>
+    <item
+        android:drawable="@drawable/bulutsag3" android:duration="200"/>
+    <item
+        android:drawable="@drawable/bulutsag4" android:duration="200"/>
+    <item
+        android:drawable="@drawable/bulutsag3" android:duration="200"/>
+    <item
+        android:drawable="@drawable/bulutsag2" android:duration="200"/>
+    <item
+        android:drawable="@drawable/bulutsag1" android:duration="200"/>
+
+</animation-list>
