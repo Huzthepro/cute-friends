@@ -23,7 +23,9 @@ Adventures of the Cutest Friends</h4>
 </div>
 
 ## Download
-https://play.google.com/store/apps/details?id=com.tellstorygames.sevimliler&pcampaignid=web_share
+[Download](https://play.google.com/store/apps/details?id=com.tellstorygames.sevimliler&pcampaignid=web_share)
+
+[![GitHub Logo](/CuteFriends.png)](https://github.com/your-username/your-repository)
 
 
  This program was created in response to a request from a translator friend who manually translated and separated subtitles into .srt files by copying and pasting lines for each voice actor's performance.
