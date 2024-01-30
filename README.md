@@ -6,7 +6,12 @@
   <br>
 </h1>
 
-<h4 align="center">🎈Balloon, 🐤Chick-chick and ☁️Cloud 
+<h4 align="center">
+🐤Chick-chick
+<br>
+🎈Balloon
+<br>
+☁️Cloud 
 <br>
 Adventures of the Cutest Friends</h4>
 
