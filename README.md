@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="/CuteFriends.png" alt="Subtitle Separator" width="64">
+  <img src="/CuteFriends.png" alt="Subtitle Separator" width="128">
   <br>
   Cute Friends
   <br>
@@ -16,7 +16,7 @@
 Adventures of the Cutest Friends</h4>
 
 <p align="center">
-  <img alt="How To Use" src="/DemoPlay.gif" width="60%">
+  <img alt="How To Use" src="/DemoPlay.gif" width="40%">
 </p>
 
 <h1 align="center">
