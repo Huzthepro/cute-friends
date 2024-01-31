@@ -33,5 +33,13 @@ You can download from: <a href="https://play.google.com/store/apps/details?id=co
 <h1 align="center">
   Characters
 </h1>
+<h2 align="left">
+  Chick-Chick
+</h2>
+<img alt="How To Use" src="/Chick.jpg" align="right" width="30%">
+<h2 align="left">
+  Balloon
+</h2>
+<img alt="How To Use" src="/Balloo.jpg" align="right" width="30%">
 
 
