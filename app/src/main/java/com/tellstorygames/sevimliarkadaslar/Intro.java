@@ -14,8 +14,23 @@ import java.util.TimerTask;
 
 public class Intro extends AppCompatActivity {
 
+    private static final int TIME_ELMA_ELINDE = 30;
+    private static final int TIME_ELMA_DUSTU = 70;
+    private static final int TIME_YENI_ELMA = 120;
+    private static final int TIME_UZANDI = 160;
+    private static final int TIME_MAYMUN_GIRDI = 200;
+    private static final int TIME_MAYMUN_SIRITMA = 250;
+    private static final int TIME_MAYMUN_UZANMA = 280;
+    private static final int TIME_SEPET_YOK = 320;
+    private static final int TIME_ELMA_KOPARILDI = 340;
+    private static final int TIME_SEPETE_BAKTI = 390;
+    private static final int TIME_UZULDU = 430;
+    private static final int TIME_ELMA_DUSTU_AGAIN = 460;
+    private static final int TIME_AGLIYOR = 500;
+    private static final int TIME_AGLIYOR_2 = 540;
+
     private ImageView intro;
-    private int zaman;
+    private int elapsedTime;
     private Handler handler = new Handler();
     private Timer timer = new Timer();
     private SoundPlayer soundIntro;
@@ -35,98 +50,104 @@ public class Intro extends AppCompatActivity {
         skpIntAnm = (AnimationDrawable) skpIntro.getBackground();
         skpIntAnm.start();
 
-            this.timer = new Timer();
-            timer.schedule(new TimerTask() {
-                @Override
-                public void run() {
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            introAction();
-                        }
-                    });
-                }
-            }, 0, 20);
+        this.timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        introAction();
+                    }
+                });
+            }
+        }, 0, 20);
     }
 
-    public void introAction(){
-        zaman ++;
-        if (zaman == 30) {//elma elinde
-            intro.setImageResource(R.drawable.intro2);
-            soundIntro.degiskenSes(soundIntro.introses1);
-        }
-        if (zaman == 70) {//elma düştü
-            intro.setImageResource(R.drawable.intro3);
-        }
-        if (zaman == 120) {//yeni elmaya bakıyor
-            intro.setImageResource(R.drawable.intro4);
-        }
-        if (zaman == 160) {//uzandı 280
-            intro.setImageResource(R.drawable.intro5);
-            soundIntro.degiskenSes(soundIntro.introses2);
-        }
-        if (zaman == 200) {//maymun girdi
-            intro.setImageResource(R.drawable.intro6);
-            soundIntro.degiskenSes(soundIntro.introses3);
-        }
-        if (zaman == 250) {//maymun sırıtma
-            intro.setImageResource(R.drawable.intro7);
-        }
-        if (zaman == 280) {//maymun uzanma
-            intro.setImageResource(R.drawable.intro8);
-            soundIntro.degiskenSes(soundIntro.introses4);
-        }
-        if (zaman == 320) {//sepet yok
-            intro.setImageResource(R.drawable.intro9);
-            soundIntro.degiskenSes(soundIntro.introses5);
-        }
-        if (zaman == 340) {//elma koparıldı
-            intro.setImageResource(R.drawable.intro10);
-        }
-        if (zaman == 390) {//sepete baktı
-            intro.setImageResource(R.drawable.intro11);
-            soundIntro.degiskenSes(soundIntro.introses6);
-        }
-        if (zaman == 430) {//üzüldü
-            intro.setImageResource(R.drawable.intro12);
-            soundIntro.degiskenSes(soundIntro.introses1);
-        }
-        if (zaman == 460) {//elma düştü
-            intro.setImageResource(R.drawable.intro13);
-            soundIntro.degiskenSes(soundIntro.introses6);
-        }
-        if (zaman == 500) {//ağlıyor
-            intro.setImageResource(R.drawable.intro14);
-            soundIntro.degiskenSes(soundIntro.introses6);
-        }
-        if (zaman == 540) { //ağlıyor2
-            timer.cancel();
-            timer = null;
-            skpIntAnm.stop();
-            Intent i=new Intent(Intro.this, Oyun.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(i);
-            finish();
+    public void introAction() {
+        elapsedTime++;
+        switch (elapsedTime) {
+            case TIME_ELMA_ELINDE:
+                setIntroImage(R.drawable.intro2);
+                playSound(soundIntro.introses1);
+                break;
+            case TIME_ELMA_DUSTU:
+                setIntroImage(R.drawable.intro3);
+                break;
+            case TIME_YENI_ELMA:
+                setIntroImage(R.drawable.intro4);
+                break;
+            case TIME_UZANDI:
+                setIntroImage(R.drawable.intro5);
+                playSound(soundIntro.introses2);
+                break;
+            case TIME_MAYMUN_GIRDI:
+                setIntroImage(R.drawable.intro6);
+                playSound(soundIntro.introses3);
+                break;
+            case TIME_MAYMUN_SIRITMA:
+                setIntroImage(R.drawable.intro7);
+                break;
+            case TIME_MAYMUN_UZANMA:
+                setIntroImage(R.drawable.intro8);
+                playSound(soundIntro.introses4);
+                break;
+            case TIME_SEPET_YOK:
+                setIntroImage(R.drawable.intro9);
+                playSound(soundIntro.introses5);
+                break;
+            case TIME_ELMA_KOPARILDI:
+                setIntroImage(R.drawable.intro10);
+                break;
+            case TIME_SEPETE_BAKTI:
+                setIntroImage(R.drawable.intro11);
+                playSound(soundIntro.introses6);
+                break;
+            case TIME_UZULDU:
+                setIntroImage(R.drawable.intro12);
+                playSound(soundIntro.introses1);
+                break;
+            case TIME_ELMA_DUSTU_AGAIN:
+                setIntroImage(R.drawable.intro13);
+                playSound(soundIntro.introses6);
+                break;
+            case TIME_AGLIYOR:
+                setIntroImage(R.drawable.intro14);
+                playSound(soundIntro.introses6);
+                break;
+            case TIME_AGLIYOR_2:
+                handleIntroCompletion();
+                break;
         }
     }
 
-    public void skipIntro (View view) {
+    private void setIntroImage(int resourceId) {
+        intro.setImageResource(resourceId);
+    }
+
+    private void playSound(int soundId) {
+        soundIntro.degiskenSes(soundId);
+    }
+
+    private void handleIntroCompletion() {
         timer.cancel();
         timer = null;
         skpIntAnm.stop();
-        Intent i=new Intent(Intro.this, Oyun.class);
+        Intent i = new Intent(Intro.this, Oyun.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(i);
         finish();
     }
 
+    public void skipIntro(View view) {
+        handleIntroCompletion();
+    }
 
-
-    //geri tuşu iptal etme
+    // Back button handling
     @Override
-    public boolean dispatchKeyEvent(KeyEvent event){
-        if (event.getAction() == KeyEvent.ACTION_DOWN){
-            switch (event.getKeyCode()){
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            switch (event.getKeyCode()) {
                 case KeyEvent.KEYCODE_BACK:
                     return true;
             }
@@ -139,5 +160,5 @@ public class Intro extends AppCompatActivity {
         soundIntro.release();
         super.onDestroy();
     }
-
 }
+
