@@ -37,16 +37,22 @@ You can download from: <a href="https://play.google.com/store/apps/details?id=co
 <h2 align="left">
   Chick-Chick
 </h2>
+<img alt="How To Use" src="/Chick.jpg" align="right" width="30%">
+
 <p>
-  Brave Chick-Chick is ready to defend for Ece
+  Brave Chick-Chick is ready to catch Evil Monkey and get Ece's food.
 </p>
 
-  Special Power: **Shield**
+  **Special Power**: Shield🛡️
+  <br>
+<br>
+When shield is active Chick-Chick can defend himself against all enemies
 
-<img alt="How To Use" src="/Chick.jpg" align="right" width="30%">
-<h2 align="left">
+
+<h2 align="left" margin-top="30px">
   Balloon
+ 
 </h2>
-<img alt="How To Use" src="/Balloon.jpg" align="right" width="30%">
+ <img alt="How To Use" src="/Balloon.jpg" align="right" width="30%">
 
 
