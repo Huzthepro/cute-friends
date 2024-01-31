@@ -20,12 +20,14 @@
 <br>
 Adventures of the Cutest Friends</h4>
 </h3>
+  <p>Oh no!.. The naughty monkey stole Ece's fruits. Help the cute friends retrieve the fruits from the naughty monkey.</p>
 </div>
 
 ## Download
-[Download](https://play.google.com/store/apps/details?id=com.tellstorygames.sevimliler&pcampaignid=web_share)
 
-[![GitHub Logo](/CuteFriends.png)](https://github.com/your-username/your-repository)
+You can download from: <a href="https://play.google.com/store/apps/details?id=com.tellstorygames.sevimliler&pcampaignid=web_share" target="_blank"><img src="/googleplay.png" alt="google play" width="150" align="middle"></a>
+
+
 
 
  This program was created in response to a request from a translator friend who manually translated and separated subtitles into .srt files by copying and pasting lines for each voice actor's performance.
