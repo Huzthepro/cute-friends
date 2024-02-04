@@ -893,6 +893,19 @@ public class Oyun extends AppCompatActivity {
             mymnDrnAnm.start();
         }
     }
+    // ALT TAB
+    @Override
+    protected void onPause() {
+        menuOpener();
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        menuOpener();
+        super.onStop();
+    }
+
     //LVL ATLAMA
     public void lvlUp(){
         if (lvl == 9){
